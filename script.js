@@ -1,121 +1,90 @@
-// ===============================
-// DARK / LIGHT MODE
-// ===============================
-
 const themeButton = document.getElementById("theme-btn");
-
-themeButton.addEventListener("click", function () {
-
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        themeButton.textContent = "☀️";
-    } else {
-        themeButton.textContent = "🌙";
-    }
-
-});
-
-
-// ===============================
-// CONTACT FORM VALIDATION
-// ===============================
-
 const contactForm = document.getElementById("contact-form");
+const navigationLinks = document.querySelectorAll(".nav-links a");
 
-contactForm.addEventListener("submit", function (event) {
+function showWelcomeMessage() {
+    console.log("Welcome to my portfolio!");
+}
 
+
+function validateForm() {
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    // Check name
     if (name === "") {
-        event.preventDefault();
         alert("Please enter your name.");
-        return;
+        return false;
     }
 
-    // Check email
+    if (email === "") {
+        alert("Please enter your email.");
+        return false;
+    }
+
+    if (message === "") {
+        alert("Please enter your message.");
+        return false;
+    }
+
+  
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailPattern.test(email)) {
-        event.preventDefault();
         alert("Please enter a valid email address.");
-        return;
+        return false;
     }
 
-    // Check message
-    if (message === "") {
-        event.preventDefault();
-        alert("Please enter your message.");
-        return;
-    }
-
-    // If everything is valid,
-    // allow the form to submit to contact.php.
-
-});
+    return true;
+}
 
 
-// ===============================
-// NAVIGATION CLICK EVENT
-// ===============================
+if (themeButton) {
+    themeButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
 
-const navigationLinks = document.querySelectorAll(".nav-links a");
+        if (document.body.classList.contains("dark-mode")) {
+            themeButton.textContent = "☀️ Light Mode";
+        } else {
+            themeButton.textContent = "🌙 Dark Mode";
+        }
+    });
+}
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        if (!validateForm()) {
+            event.preventDefault();
+        }
+    });
+}
+
 
 navigationLinks.forEach(function (link) {
-
     link.addEventListener("click", function () {
-
-        console.log("Navigation clicked:", link.textContent);
-
+        console.log("Navigation link clicked:", link.textContent);
     });
-
 });
 
-
-// ===============================
-// KEYUP EVENT
-// ===============================
 
 const nameInput = document.getElementById("name");
 
-nameInput.addEventListener("keyup", function () {
-
-    console.log("User is typing:", nameInput.value);
-
-});
-
-
-// ===============================
-// CHANGE EVENT
-// ===============================
+if (nameInput) {
+    nameInput.addEventListener("keyup", function () {
+        console.log("Name entered:", nameInput.value);
+    });
+}
 
 document.body.addEventListener("change", function () {
-
-    console.log("A form value has changed.");
-
+    console.log("A form value was changed.");
 });
 
-
-// ===============================
-// DOM MANIPULATION
-// ===============================
 
 const heroTitle = document.querySelector(".hero h1");
 
-console.log("Portfolio title:", heroTitle.textContent);
-
-
-// ===============================
-// SIMPLE FUNCTION
-// ===============================
-
-function showWelcomeMessage() {
-
-    console.log("Welcome to Vinay's Portfolio!");
-
+if (heroTitle) {
+    heroTitle.addEventListener("click", function () {
+        heroTitle.textContent = "Welcome to My Portfolio!";
+    });
 }
-
 showWelcomeMessage();
