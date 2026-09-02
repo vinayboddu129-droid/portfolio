@@ -46,6 +46,13 @@ header {
     font-size: 25px;
     font-weight: bold;
     text-decoration: none;
+
+    /* CSS transition */
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .logo span {
@@ -67,6 +74,7 @@ header {
 
 .nav-links a:hover {
     color: #8b5cf6;
+    transform: translateY(-2px);
 }
 
 .theme-btn {
@@ -75,6 +83,11 @@ header {
     color: white;
     font-size: 22px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    transform: rotate(20deg) scale(1.1);
 }
 
 
@@ -96,6 +109,9 @@ header {
 
 .hero-content {
     flex: 1;
+
+    /* CSS animation */
+    animation: slideInLeft 1s ease;
 }
 
 .welcome {
@@ -137,18 +153,24 @@ header {
     display: inline-block;
     padding: 12px 25px;
     border-radius: 8px;
-    background: #7c3aed;
+
+    /* Gradient */
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+
     color: white;
     text-decoration: none;
     border: 2px solid #7c3aed;
     font-weight: bold;
     cursor: pointer;
+
+    /* Transition */
     transition: 0.3s;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    background: #6d28d9;
+    background: linear-gradient(135deg, #6d28d9, #7c3aed);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
 }
 
 .secondary-btn {
@@ -169,6 +191,8 @@ header {
     flex: 1;
     display: flex;
     justify-content: center;
+
+    animation: slideInRight 1s ease;
 }
 
 .profile-circle {
@@ -183,7 +207,11 @@ header {
     justify-content: center;
 
     background: #111827;
+
     box-shadow: 0 0 40px rgba(124, 58, 237, 0.4);
+
+    /* Animation */
+    animation: float 3s ease-in-out infinite;
 }
 
 .profile-circle span {
@@ -252,7 +280,16 @@ header {
     background: white;
     padding: 25px;
     border-radius: 12px;
+
+    /* Shadow */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    /* Transition */
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
 }
 
 .info-card strong {
@@ -281,6 +318,11 @@ header {
     padding: 30px 20px;
     text-align: center;
     border-radius: 12px;
+
+    /* Border */
+    border: 1px solid #e5e7eb;
+
+    /* Transition */
     transition: 0.3s;
 }
 
@@ -299,7 +341,9 @@ header {
     align-items: center;
     justify-content: center;
 
-    background: #7c3aed;
+    /* Gradient */
+    background: linear-gradient(135deg, #7c3aed, #a78bfa);
+
     color: white;
     border-radius: 50%;
     font-weight: bold;
@@ -329,17 +373,23 @@ header {
     background: white;
     border-radius: 15px;
     overflow: hidden;
+
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    /* Transition */
     transition: 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .project-image {
     height: 180px;
-    background: #111827;
+
+    /* Gradient */
+    background: linear-gradient(135deg, #111827, #312e81);
 
     display: flex;
     align-items: center;
@@ -379,6 +429,80 @@ header {
 
 
 /* =========================
+   MEDIA
+========================= */
+
+.media-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.media-card:hover {
+    transform: translateY(-5px);
+}
+
+.media-card h3 {
+    color: #7c3aed;
+    margin-bottom: 10px;
+}
+
+.media-card audio,
+.media-card video,
+.media-card iframe {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   SKILLS TABLE
+========================= */
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skills-table th,
+.skills-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.skills-table th {
+    background: #7c3aed;
+    color: white;
+}
+
+.skills-table tbody tr {
+    transition: 0.3s;
+}
+
+.skills-table tbody tr:hover {
+    background: #f5f3ff;
+}
+
+.skills-table tfoot {
+    font-weight: bold;
+    background: #ede9fe;
+}
+
+
+/* =========================
    CONTACT
 ========================= */
 
@@ -409,7 +533,8 @@ header {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
     width: 100%;
     padding: 14px;
 
@@ -418,16 +543,24 @@ header {
 
     font-size: 15px;
     font-family: inherit;
+
+    transition: 0.3s;
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form select:focus {
     outline: none;
     border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
 }
 
 .contact-form button {
     width: fit-content;
+}
+
+.contact-form label {
+    cursor: pointer;
 }
 
 
@@ -451,6 +584,8 @@ footer a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
+
+    transition: 0.3s;
 }
 
 footer a:hover {
@@ -486,6 +621,31 @@ body.dark-mode .skill-card {
     background: #1e293b;
 }
 
+body.dark-mode .media-card {
+    background: #1e293b;
+}
+
+body.dark-mode .skills-table {
+    background: #1e293b;
+    color: white;
+}
+
+body.dark-mode .skills-table tbody tr:hover {
+    background: #334155;
+}
+
+body.dark-mode .skills-table tfoot {
+    background: #334155;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea,
+body.dark-mode .contact-form select {
+    background: #1e293b;
+    color: white;
+    border-color: #475569;
+}
+
 body.dark-mode .about-text p,
 body.dark-mode .hero-text,
 body.dark-mode .skill-card p,
@@ -496,6 +656,57 @@ body.dark-mode .contact-info p {
 
 body.dark-mode .hero h2 {
     color: #cbd5e1;
+}
+
+
+/* =========================
+   CSS ANIMATIONS
+========================= */
+
+@keyframes slideInLeft {
+
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes slideInRight {
+
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
 }
 
 
@@ -533,6 +744,7 @@ body.dark-mode .hero h2 {
     .contact-container {
         grid-template-columns: 1fr;
     }
+
 }
 
 
@@ -544,6 +756,10 @@ body.dark-mode .hero h2 {
 
     .nav-links {
         display: none;
+    }
+
+    .hero {
+        padding: 60px 20px;
     }
 
     .hero h1 {
@@ -571,6 +787,19 @@ body.dark-mode .hero h2 {
         grid-template-columns: 1fr;
     }
 
+    .skills-table {
+        font-size: 14px;
+    }
+
+    .skills-table th,
+    .skills-table td {
+        padding: 10px;
+    }
+
+    .media-card iframe {
+        width: 100%;
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
@@ -580,4 +809,5 @@ body.dark-mode .hero h2 {
         display: inline-block;
         margin: 5px;
     }
+
 }
