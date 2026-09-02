@@ -5,7 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Vinay Boddu | Web Developer</title>
+    <meta
+        name="description"
+        content="Personal portfolio website showcasing my skills, projects, education and contact information."
+    >
+
+    <meta
+        name="keywords"
+        content="portfolio, web development, HTML, CSS, JavaScript, PHP, MySQL"
+    >
+
+    <meta name="author" content="Vinay">
+
+    <title>My Personal Portfolio</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
@@ -13,15 +25,17 @@
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- =========================
+         Header and Navigation
+    ========================== -->
 
-    <header>
-        <nav class="navbar">
+    <header class="navbar">
 
-            <a href="#home" class="logo">
-                Vinay<span>.</span>
-            </a>
+        <div class="logo">
+            My Portfolio
+        </div>
 
+        <nav aria-label="Main Navigation">
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -30,694 +44,444 @@
                 <li><a href="#media">Media</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <button id="theme-btn" class="theme-btn">
-                🌙
-            </button>
-
         </nav>
+
+        <button
+            id="theme-btn"
+            type="button"
+            aria-label="Toggle dark and light mode"
+        >
+            🌙 Dark Mode
+        </button>
+
     </header>
 
 
-    <!-- ================= MAIN ================= -->
+    <!-- =========================
+         Main Content
+    ========================== -->
 
     <main>
 
-        <!-- ================= HOME ================= -->
+        <!-- Home Section -->
 
         <section id="home" class="hero">
 
             <div class="hero-content">
 
-                <p class="welcome">
-                    WELCOME TO MY PORTFOLIO
+                <p class="hero-subtitle">
+                    Welcome to my portfolio
                 </p>
 
                 <h1>
-                    Hi, I'm <span>Vinay Boddu</span>
+                    Hi, I'm Vinay
                 </h1>
 
-                <h2>
-                    Web Developer
-                </h2>
-
-                <p class="hero-text">
-                    I build responsive and user-friendly websites
-                    using modern web technologies.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#projects" class="btn">
-                        View My Work
-                    </a>
-
-                    <a href="#contact" class="btn secondary-btn">
-                        Contact Me
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-image">
-
-                <div class="profile-circle">
-                    <span>VB</span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section id="about" class="section">
-
-            <div class="section-title">
-
                 <p>
-                    GET TO KNOW ME
+                    I am a student interested in web development
+                    and software technologies.
                 </p>
 
-                <h2>
-                    About Me
-                </h2>
-
-            </div>
-
-
-            <div class="about-container">
-
-                <div class="about-text">
-
-                    <h3>
-                        I'm a passionate Web Developer
-                    </h3>
-
-                    <p>
-                        Hello! I'm Vinay Boddu. I am interested in
-                        web development and technology. I enjoy creating
-                        websites that are simple, responsive and easy
-                        to use.
-                    </p>
-
-                    <p>
-                        I am currently building my skills in HTML,
-                        CSS, JavaScript, PHP and MySQL. I am always
-                        interested in learning new technologies and
-                        improving my programming skills.
-                    </p>
-
-                </div>
-
-
-                <div class="about-info">
-
-                    <div class="info-card">
-                        <strong>Name</strong>
-                        <span>Vinay Boddu</span>
-                    </div>
-
-                    <div class="info-card">
-                        <strong>Role</strong>
-                        <span>Web Developer</span>
-                    </div>
-
-                    <div class="info-card">
-                        <strong>Skills</strong>
-                        <span>HTML, CSS, JS, PHP</span>
-                    </div>
-
-                    <div class="info-card">
-                        <strong>Experience</strong>
-                        <span>Fresher</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section id="skills" class="section skills-section">
-
-            <div class="section-title">
-
-                <p>
-                    WHAT I KNOW
-                </p>
-
-                <h2>
-                    My Skills
-                </h2>
-
-            </div>
-
-
-            <div class="skills-container">
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        HTML
-                    </div>
-
-                    <h3>
-                        HTML5
-                    </h3>
-
-                    <p>
-                        Semantic and structured web pages
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        CSS
-                    </div>
-
-                    <h3>
-                        CSS3
-                    </h3>
-
-                    <p>
-                        Responsive and modern designs
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        JS
-                    </div>
-
-                    <h3>
-                        JavaScript
-                    </h3>
-
-                    <p>
-                        Interactive web functionality
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        PHP
-                    </div>
-
-                    <h3>
-                        PHP
-                    </h3>
-
-                    <p>
-                        Server-side web development
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        SQL
-                    </div>
-
-                    <h3>
-                        MySQL
-                    </h3>
-
-                    <p>
-                        Database management and queries
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section id="projects" class="section">
-
-            <div class="section-title">
-
-                <p>
-                    MY RECENT WORK
-                </p>
-
-                <h2>
-                    Projects
-                </h2>
-
-            </div>
-
-
-            <div class="projects-container">
-
-                <article class="project-card">
-
-                    <div class="project-image">
-                        🌐
-                    </div>
-
-                    <div class="project-content">
-
-                        <h3>
-                            Personal Portfolio
-                        </h3>
-
-                        <p>
-                            A responsive personal portfolio website
-                            built using HTML, CSS and JavaScript.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-image">
-                        📋
-                    </div>
-
-                    <div class="project-content">
-
-                        <h3>
-                            Task Manager
-                        </h3>
-
-                        <p>
-                            A simple task management application
-                            that allows users to add and manage tasks.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-image">
-                        💻
-                    </div>
-
-                    <div class="project-content">
-
-                        <h3>
-                            PHP & MySQL Project
-                        </h3>
-
-                        <p>
-                            A database-driven web application using
-                            PHP and MySQL.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= MULTIMEDIA ================= -->
-
-        <section id="media" class="section">
-
-            <div class="section-title">
-
-                <p>
-                    HTML5 MULTIMEDIA
-                </p>
-
-                <h2>
-                    Media
-                </h2>
-
-            </div>
-
-
-            <!-- AUDIO -->
-
-            <article class="media-card">
-
-                <h3>
-                    Audio
-                </h3>
-
-                <p>
-                    HTML5 audio demonstration:
-                </p>
-
-                <audio controls>
-
-                    <source
-                        src="https://www.w3schools.com/html/horse.ogg"
-                        type="audio/ogg"
-                    >
-
-                    <source
-                        src="https://www.w3schools.com/html/horse.mp3"
-                        type="audio/mpeg"
-                    >
-
-                    Your browser does not support the audio element.
-
-                </audio>
-
-            </article>
-
-
-            <!-- VIDEO -->
-
-            <article class="media-card">
-
-                <h3>
-                    Video
-                </h3>
-
-                <p>
-                    HTML5 video demonstration:
-                </p>
-
-                <video controls width="400">
-
-                    <source
-                        src="https://www.w3schools.com/html/mov_bbb.mp4"
-                        type="video/mp4"
-                    >
-
-                    Your browser does not support the video element.
-
-                </video>
-
-            </article>
-
-
-            <!-- IFRAME -->
-
-            <article class="media-card">
-
-                <h3>
-                    Iframe
-                </h3>
-
-                <p>
-                    Embedded web content using an iframe:
-                </p>
-
-                <iframe
-                    src="https://www.example.com"
-                    width="500"
-                    height="250"
-                    title="Example Website"
-                >
-                </iframe>
-
-            </article>
-
-        </section>
-
-
-        <!-- ================= TABLE ================= -->
-
-        <section id="skills-table" class="section">
-
-            <div class="section-title">
-
-                <p>
-                    TECHNOLOGY OVERVIEW
-                </p>
-
-                <h2>
-                    Skills Table
-                </h2>
-
-            </div>
-
-
-            <table class="skills-table">
-
-                <thead>
-
-                    <tr>
-
-                        <th>
-                            Technology
-                        </th>
-
-                        <th>
-                            Category
-                        </th>
-
-                        <th>
-                            Level
-                        </th>
-
-                    </tr>
-
-                </thead>
-
-
-                <tbody>
-
-                    <tr>
-                        <td>HTML5</td>
-                        <td>Frontend</td>
-                        <td>Intermediate</td>
-                    </tr>
-
-                    <tr>
-                        <td>CSS3</td>
-                        <td>Frontend</td>
-                        <td>Intermediate</td>
-                    </tr>
-
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Programming</td>
-                        <td>Beginner</td>
-                    </tr>
-
-                    <tr>
-                        <td>PHP</td>
-                        <td>Backend</td>
-                        <td>Beginner</td>
-                    </tr>
-
-                    <tr>
-                        <td>MySQL</td>
-                        <td>Database</td>
-                        <td>Beginner</td>
-                    </tr>
-
-                </tbody>
-
-
-                <tfoot>
-
-                    <tr>
-
-                        <td colspan="2">
-                            Total Technologies
-                        </td>
-
-                        <td>
-                            5
-                        </td>
-
-                    </tr>
-
-                </tfoot>
-
-            </table>
-
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section id="contact" class="section contact-section">
-
-            <div class="section-title">
-
-                <p>
-                    GET IN TOUCH
-                </p>
-
-                <h2>
+                <a href="#contact" class="btn">
                     Contact Me
-                </h2>
+                </a>
+
+            </div>
+
+            <div class="profile-circle" aria-label="Profile image placeholder">
+                <span>VB</span>
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+
+        <section id="about" class="about">
+
+            <div>
+
+                <h2>About Me</h2>
+
+                <p>
+                    I am learning web development and building projects
+                    using HTML, CSS, JavaScript, PHP and MySQL.
+                </p>
+
+                <p>
+                    This portfolio demonstrates the foundation skills
+                    learned during Task 1.
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <h3>My Goal</h3>
+
+                <p>
+                    To improve my programming and web development skills
+                    by creating practical projects.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills Section -->
+
+        <section id="skills" class="skills">
+
+            <h2>My Skills</h2>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <div class="skill-icon">HTML</div>
+                    <h3>HTML5</h3>
+                    <p>
+                        Semantic page structure, forms, tables
+                        and multimedia.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">CSS</div>
+                    <h3>CSS3</h3>
+                    <p>
+                        Responsive layouts, Flexbox, Grid,
+                        animations and styling.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>
+                        DOM manipulation, events and form validation.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">PHP</div>
+                    <h3>PHP</h3>
+                    <p>
+                        Server-side programming and form processing.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">SQL</div>
+                    <h3>MySQL</h3>
+                    <p>
+                        Database creation and CRUD operations.
+                    </p>
+                </article>
 
             </div>
 
 
-            <div class="contact-container">
+            <!-- HTML5 Table -->
 
-                <div class="contact-info">
+            <h3 class="table-title">
+                Skill Overview
+            </h3>
 
-                    <h3>
-                        Let's Connect
-                    </h3>
+            <div class="table-container">
 
-                    <p>
-                        Have a project or opportunity?
-                        Feel free to contact me.
-                    </p>
+                <table class="skills-table">
 
-                    <p>
-                        📧 Email: your-email@example.com
-                    </p>
+                    <caption>
+                        Technologies used in my portfolio
+                    </caption>
 
-                    <p>
-                        📱 Phone: +91 XXXXX XXXXX
-                    </p>
+                    <thead>
+                        <tr>
+                            <th scope="col">Technology</th>
+                            <th scope="col">Purpose</th>
+                            <th scope="col">Level</th>
+                        </tr>
+                    </thead>
 
-                </div>
+                    <tbody>
+
+                        <tr>
+                            <td>HTML5</td>
+                            <td>Web page structure</td>
+                            <td>Beginner</td>
+                        </tr>
+
+                        <tr>
+                            <td>CSS3</td>
+                            <td>Web page styling</td>
+                            <td>Beginner</td>
+                        </tr>
+
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Web page interaction</td>
+                            <td>Beginner</td>
+                        </tr>
+
+                        <tr>
+                            <td>PHP</td>
+                            <td>Server-side processing</td>
+                            <td>Beginner</td>
+                        </tr>
+
+                        <tr>
+                            <td>MySQL</td>
+                            <td>Database management</td>
+                            <td>Beginner</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                Total technologies: 5
+                            </td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </div>
+
+        </section>
 
 
-                <!-- CONTACT FORM -->
+        <!-- Projects Section -->
 
-                <form
-                    id="contact-form"
-                    class="contact-form"
-                    action="contact.php"
-                    method="POST"
-                >
+        <section id="projects" class="projects">
 
-                    <!-- Name -->
+            <h2>My Projects</h2>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        Portfolio
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Personal Portfolio</h3>
+
+                        <p>
+                            A responsive portfolio website created
+                            using HTML5, CSS3 and JavaScript.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        PHP + MySQL
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Contact Management System</h3>
+
+                        <p>
+                            A PHP and MySQL application that supports
+                            creating, reading, updating and deleting
+                            contact messages.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Media Section -->
+
+        <section id="media" class="media-section">
+
+            <h2>HTML5 Multimedia</h2>
+
+            <div class="media-grid">
+
+                <article class="media-card">
+
+                    <h3>Audio</h3>
+
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                </article>
+
+
+                <article class="media-card">
+
+                    <h3>Video</h3>
+
+                    <video controls width="100%">
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+
+                </article>
+
+
+                <article class="media-card">
+
+                    <h3>Embedded Content</h3>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        title="Embedded YouTube video"
+                        width="100%"
+                        height="250"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+
+        <section id="contact" class="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Fill in the form below to send me a message.
+            </p>
+
+            <form
+                id="contact-form"
+                action="contact.php"
+                method="POST"
+                novalidate
+            >
+
+                <!-- Name -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name:
+                    </label>
 
                     <input
                         type="text"
                         id="name"
                         name="name"
-                        placeholder="Your Name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
                         required
                     >
 
+                </div>
 
-                    <!-- Email -->
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email:
+                    </label>
 
                     <input
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="Your Email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
                         required
                     >
 
-
-                    <!-- Message -->
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        placeholder="Your Message"
-                        required
-                    ></textarea>
+                </div>
 
 
-                    <!-- SELECT -->
+                <!-- Project Type -->
 
-                    <label for="project-type">
-                        Project Type
+                <div class="form-group">
+
+                    <label for="project_type">
+                        Project Type:
                     </label>
 
                     <select
-                        id="project-type"
+                        id="project_type"
                         name="project_type"
                     >
 
                         <option value="">
-                            Select Project Type
+                            Select a project type
                         </option>
 
-                        <option value="portfolio">
-                            Portfolio Website
+                        <option value="web">
+                            Web Development
                         </option>
 
-                        <option value="business">
-                            Business Website
+                        <option value="database">
+                            Database Project
                         </option>
 
-                        <option value="web-app">
-                            Web Application
+                        <option value="other">
+                            Other
                         </option>
 
                     </select>
 
+                </div>
 
-                    <!-- RADIO BUTTON -->
 
-                    <p>
+                <!-- Preferred Contact Method -->
+
+                <fieldset class="form-group">
+
+                    <legend>
                         Preferred Contact Method:
-                    </p>
+                    </legend>
 
                     <label>
-
                         <input
                             type="radio"
                             name="contact_method"
                             value="email"
+                            checked
                         >
-
                         Email
-
                     </label>
 
-
                     <label>
-
                         <input
                             type="radio"
                             name="contact_method"
                             value="phone"
                         >
-
                         Phone
-
                     </label>
 
+                </fieldset>
 
-                    <!-- CHECKBOX -->
+
+                <!-- Updates Checkbox -->
+
+                <div class="form-group">
 
                     <label>
 
@@ -727,53 +491,67 @@
                             value="yes"
                         >
 
-                        I would like to receive project updates.
+                        Receive project updates
 
                     </label>
 
+                </div>
 
-                    <!-- SUBMIT -->
 
-                    <button
-                        type="submit"
-                        class="btn"
-                    >
-                        Send Message
-                    </button>
+                <!-- Message -->
 
-                </form>
+                <div class="form-group">
 
-            </div>
+                    <label for="message">
+                        Message:
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Enter your message"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Send Message
+                </button>
+
+            </form>
 
         </section>
 
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =========================
+         Footer
+    ========================== -->
 
     <footer>
 
         <p>
-            © 2026 Vinay Boddu. All Rights Reserved.
+            &copy; 2026 My Personal Portfolio.
+            All rights reserved.
         </p>
 
-        <div>
-
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#media">Media</a>
-            <a href="#contact">Contact</a>
-
-        </div>
+        <p>
+            Built with HTML5, CSS3, JavaScript, PHP and MySQL.
+        </p>
 
     </footer>
 
 
-    <!-- JavaScript -->
-
+    <!-- External JavaScript -->
     <script src="script.js"></script>
 
 </body>
